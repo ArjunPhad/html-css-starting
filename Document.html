@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+<body style="background-color: #4f9c8c;">
+    <div style="background-color: #b1485f;">
+        <h3>Index</h3>
+        <h3>Home</h3>
+    <h3>About</h3>
+</div>
+<div>
+
+    <h4> Top 5 Favrate Food</h4>
+    <ul>
+        <li>Coffee <a href="./Document_files/coffe.jpg" coffe=""></a></li>
+        <li>Burger <a href="./Document_files/burger.jpg"></a></li>
+        <li>Pizza <a href="./Document_files/pizza.jpg"></a></li>
+        <li>Cheez-Salaad <a href="./Document_files/salaad.jpg"></a></li>
+        <li>Ice-Cream <a href="./Document_files/ice-cream.jpg"></a></li>
+     </ul>
+
+</div>
+<section style="text-align: center;">
+    
+    <img src="./Document_files/coffe.jpg" alt="coffe">
+    <img src="./Document_files/burger.jpg" alt="burger">
+    <img src="./Document_files/pizza.jpg" alt="pizza"> <br>
+    <img src="./Document_files/salaad.jpg" alt="salaad"> <br>
+    <img src="./Document_files/ice-cream.jpg" alt="ice-cream">
+</section>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
